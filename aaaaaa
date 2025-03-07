@@ -94,7 +94,7 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage")["Remotes"]["HeroSkillHarm"]:FireServer(unpack(args))
-lib:CustomTeleport("tween",str,"position")
+
 
 
 local function getChildren(path,funct)
