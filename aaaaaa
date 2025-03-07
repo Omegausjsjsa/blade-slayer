@@ -114,7 +114,7 @@ end
 local function raidEvents()
   var.fraid = true
   lib:runtime(function()
-      if var.fraid == false then break end
+      if var.fraid == false then return end
       if #workspace["Enemys"]:GetChildren() < 1 then
         lib:notify(lib:ColorFonts("Raid has cleared, no enemy remaining. teleporting u to the raid lobby","Green"),10)
         if workspace:FindFirstChild("EnchantChest") then
