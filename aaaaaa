@@ -178,7 +178,7 @@ T7:Toggle("Auto draw machine",false,function(value)
     end
 end)
 
-lib:runtime(function()
+--[[lib:runtime(function()
     if var.machine.toggle == true then
     if var.machine.s == "Mask" then
       if player.self.Character:FindFirstChild("Mask1") and var.machine.delete.common == true then
@@ -234,7 +234,7 @@ lib:runtime(function()
     end
     end
 end)
-
+]]
 T6:Dropdown("Select Room",var.raid.table,function(value)
     var.raid.s = value
 end)
